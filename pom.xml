@@ -21,6 +21,7 @@
     <modules>
         <module>demo-example-validate</module>
         <module>demo-example-swagger</module>
+        <module>demo-example-web</module>
     </modules>
 
 
