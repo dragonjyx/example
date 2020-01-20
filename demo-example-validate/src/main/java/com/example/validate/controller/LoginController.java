@@ -11,6 +11,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +25,8 @@ import java.util.UUID;
 @RequestMapping("/")
 public class LoginController {
 
+    @Autowired
+    private UserInfo userInfo;
 
     @ApiOperation(value = "用户登录")
     @ApiResponses({
@@ -46,7 +49,7 @@ public class LoginController {
     @ApiOperation(value = "用户信息")
     @GetMapping("user-info")
     public UserInfo getUserInfo(){
-        return new UserInfo("小明",20,1,"大学生");
+        return userInfo;
     }
 
 
