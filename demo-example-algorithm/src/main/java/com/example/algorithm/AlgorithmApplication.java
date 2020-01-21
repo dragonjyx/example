@@ -1,22 +1,21 @@
-package com.example.admin;
+package com.example.algorithm;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author oyxl 10071355
  * @version 1.0
  * @description TODO
- * @date 2020/1/20 16:10
+ * @date 2020/1/21 10:38
  * @blame 仓储开发组
  **/
 @SpringBootApplication
-public class AdminApplication {
+public class AlgorithmApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AdminApplication.class, args);
+        SpringApplication.run(AlgorithmApplication.class, args);
     }
+
 
 }

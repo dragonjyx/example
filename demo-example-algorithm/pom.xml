@@ -8,11 +8,11 @@
         <version>0.0.1</version>
     </parent>
 
-    <name>demo-example-admin</name>
+    <name>demo-example-algorithm</name>
     <description>admin</description>
 
 
-    <artifactId>demo-example-admin</artifactId>
+    <artifactId>demo-example-algorithm</artifactId>
     <packaging>jar</packaging>
 
 
@@ -26,13 +26,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-        <!--添加模板引擎-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
-        </dependency>
-
 
         <dependency>
             <groupId>org.projectlombok</groupId>
